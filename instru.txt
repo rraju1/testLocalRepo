@@ -1,0 +1,22 @@
+B_1_0_B //LLB 1,2,3,4 
+B_2_0_9
+B_3_0_3
+B_4_0_2
+0_1_1_2 //adds to test ex hazs 
+0_1_1_3
+0_1_1_4
+9_3_0_2 // sw 3 2(0) data=3
+8_5_0_2 // lw 5 2(0) data=3
+0_6_5_4 // add 6=5+2 data=5
+A_2_0_1 // LHB 2
+D_0_0_6 // Branch cond 011 and offset 4 D is call C is branch
+2_8_4_1 // sub 7=4-1 dont care about data should yield negative flag
+C_6_0_6 // change offset accordingly
+0_A_4_3 // add that should not be executed result 0x05
+0_0_0_0 //dummy values
+B_9_0_6
+0_0_0_0
+E_0_F_0 // RET
+0_E_4_6
+0_B_4_6 // add after branch 18	
+F_0_0_0 //halt 19
